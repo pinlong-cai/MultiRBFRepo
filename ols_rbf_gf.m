@@ -1,5 +1,5 @@
-clc
-clear
+%clc
+%clear
 
 %% 1 加载数据
 load data
@@ -81,8 +81,8 @@ for i = 1:num2
     end
 end
 YY=P2*seta;
-MSE = mean(sqrt((YY-Y2).^2));
-display(['测试均方根误差为：',num2str(MSE)]);
+RMSE = mean(sqrt((YY-Y2).^2));
+display(['测试均方根误差为：',num2str(RMSE)]);
 display(['模型平均大小为：',num2str(L)]);
 toc
 
