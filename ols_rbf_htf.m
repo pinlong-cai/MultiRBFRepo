@@ -7,7 +7,6 @@ load data
 tic
 %% 2 参数初始�?
 ret=[];Size=[];
-lamda =0.01;
 num_in = length(X1(1,:));
 num = length(X1(:,1));
 Y1_d = Y1;
