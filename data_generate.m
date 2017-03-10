@@ -4,7 +4,7 @@
 num1 =500;%amount of train data
 X1 = zeros(num1,3);X2=zeros(num1,3);
 Y1 = zeros(num1,1);Y2 =zeros(num1,1);
-e = 0.1 ;% variance of noise
+e = 0.5 ;% variance of noise
 for i = 1:num1
     e1 = normrnd(0,e);
     e2 = normrnd(0,e);
