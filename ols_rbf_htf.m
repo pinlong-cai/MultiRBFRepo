@@ -86,11 +86,11 @@ toc
 %% 5 saving results and drawing figure
 range4 = ['K1:K',num2str(num1),':L1:L',num2str(num2)];
 xlswrite('C:\Users\lenovo\Desktop\result.xlsx',[YX,YY],'Sheet1',range4);%训练和测试输�?
-if num_in == 1
-    plot(X2,Y2,'-');hold on 
-    plot(X2,YY,'-');
-else
-   bar(1:num2,Y2-YY,'b');hold on 
-end
-title('RBF with Hyperbolic Tangent Function');
-ylabel('RMSE');
+% if num_in == 1
+%     plot(X2,Y2,'-');hold on 
+%     plot(X2,YY,'-');
+% else
+%    bar(1:num2,Y2-YY,'b');hold on 
+% end
+% title('RBF with Hyperbolic Tangent Function');
+% ylabel('RMSE');

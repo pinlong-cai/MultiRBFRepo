@@ -88,16 +88,18 @@ toc
 
 %% 5 saving results and drawing figure
 range1 = ['A1:A',num2str(num1),':D1:D',num2str(num2)];
-xlswrite('C:\Users\lenovo\Desktop\result.xlsx',[X1,Y1],'Sheet1',range1);%data for training：input and output
+xlswrite('C:\Users\lenovo\Desktop\result.xlsx',[X1,Y1],'Sheet1',range1);%data for training input and output
 range2 = ['E1:E',num2str(num1),':H1:H',num2str(num2)];
-xlswrite('C:\Users\lenovo\Desktop\result.xlsx',[X2,Y2],'Sheet1',range2);%data for testing：input and output
+xlswrite('C:\Users\lenovo\Desktop\result.xlsx',[X2,Y2],'Sheet1',range2);%data for testing input and output
 range3 = ['I1:I',num2str(num1),':J1:J',num2str(num2)];
 xlswrite('C:\Users\lenovo\Desktop\result.xlsx',[YX,YY],'Sheet1',range3);%output of training and testing
-if num_in == 1
-    plot(X2,Y2,'-');hold on 
-    plot(X2,YY,'-');
-else
-   bar(1:num2,Y2-YY,'b');hold on 
-end
-title('RBF with Gaussian Function');
-ylabel('RMSE');
+
+% if num_in == 1
+%     plot(X2,Y2,'-');hold on 
+%     plot(X2,YY,'-');
+% else
+%    bar(1:num2,Y2-YY,'b');hold on 
+%    axis([0 500 -10 10])
+% end
+% title('RBF with Gaussian Function');
+% ylabel('RMSE');

@@ -3,8 +3,10 @@
 %% 1  data generation
 num1 =500;%amount of train data
 X1 = zeros(num1,3);X2=zeros(num1,3);
-Y1 = zeros(num1,1);Y2 =zeros(num1,1);
-e = 0.5 ;% variance of noise
+Y1 = zeros(num1,1);Y2 =zeros(num1,1); 
+if exist('e') == 0
+    e = 0.5 ;% variance of noise
+end
 for i = 1:num1
     e1 = normrnd(0,e);
     e2 = normrnd(0,e);
