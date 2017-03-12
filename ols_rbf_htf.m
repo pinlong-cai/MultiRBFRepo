@@ -26,7 +26,7 @@ sigma = dmax/(alpha);
 Q=rand(num,3);
 P=tanh(X1*Q');
 G=[];A=1;cnt =1;W=[];sum_err_max=0;MSE=1;ERR=0;cter = [];afa=0;Sel=0;L=0;T=[];
-thoval = 0.5/var(Y1);%The threshold value of error reduce ratio
+thoval = e/var(Y1);%The threshold value of error reduce ratio
 
 %% 3 training process
 while(1)
@@ -48,7 +48,7 @@ while(1)
             err = (w'*w)*(g^2)/(Y1_d'*Y1_d);     
         if  err > err_max;
             err_max = err;
-            Sel(cnt) = i;
+            Sel(cnt,1) = i;
             G(cnt,1) = g;
             wp=w;
             cter(cnt,:) = Q(i,:);%c(i,:);
