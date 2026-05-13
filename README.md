@@ -1,2 +1,2 @@
 # MultiRBFRepo
-matlab codes for Multi-RBF model 
+Code base for paper: An adaptive multi-kernel RBF model using state matching.
